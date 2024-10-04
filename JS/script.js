@@ -9,6 +9,8 @@ function validateform(e) {
     let address2 = document.getElementById('address2').value;
     let address3 = document.getElementById('address3').value;
     let address4 = document.getElementById('address4').value;
+    let password = document.getElementById('password').value;
+    let confirmPassword = document.getElementById('confirmpassword').value;
 
     if (firstname === '' || lastname === '' || email === '' || phone === '' || address1 === '' || address2 === '' || address3 === '' || address4 === '') {
         alert('Please fill in all fields');
@@ -27,6 +29,16 @@ function validateform(e) {
         isValid = false;
     }
 
+    if (password.length < 8) {
+        alert('Password must be at least 8 characters');
+        isValid = false;
+    }
+
+    if (password !== confirmPassword) {
+        alert('Passwords do not match');
+        isValid = false;
+    }
+
     return isValid;
 }
 
@@ -35,3 +47,5 @@ document.getElementById('form').addEventListener('submit', function(e) {
         e.preventDefault();  
     }
 });
+
+
