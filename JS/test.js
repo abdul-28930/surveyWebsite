@@ -146,16 +146,73 @@
 
 
 
-let num = parseInt(prompt("Enter a number"));
+// let num = parseInt(prompt("Enter a number"));
 
-if (num > 0) {
-    console.log("Number is positive");
+// if (num > 0) {
+//     console.log("Number is positive");
+// }
+
+// else if (num < 0) {
+//     console.log("Number is negative");
+// }
+
+// else {
+//     console.log("Number is zero");
+// }
+
+
+let a = 5;
+let b = 6;
+let c = 5;
+
+
+if ( a + b > c && a + c > b && b + c > a) {
+    console.log("Triangle is possible");
 }
-
-else if (num < 0) {
-    console.log("Number is negative");
-}
-
+    
 else {
-    console.log("Number is zero");
+    console.log("Triangle is not possible");
+}
+
+if (a == b > c || a == c > b || b == c > a) {
+    console.log("Triangle is isosceles");
+}
+    
+else if (a == b == c) {
+    console.log("Triangle is equilateral");
+}
+    
+else {
+    console.log("Triangle is scalene");
+}
+
+
+let a1 = 6;
+let b1 = 6;
+let c1 = 6;
+
+
+if ( a + b > c && a + c > b && b + c > a) {
+    console.log("Triangle is possible");
+}
+    
+else {
+    console.log("Triangle is not possible");
+}
+console.log("heheheh");
+
+if ((a == b && b != c) || (a == c && a != b) || (b == c && b != a)) {
+    console.log("Triangle is isosceles");
+} else if (a == b && b == c) {
+    console.log("Triangle is equilateral");
+}
+else {
+    console.log("Triangle is scalene");
+}
+
+
+n = 5;
+
+for (i=0; i<n; i++) {
+    console.log(i);
 }

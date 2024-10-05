@@ -11,6 +11,8 @@ function validateform(e) {
     let address4 = document.getElementById('address4').value;
     let password = document.getElementById('password').value;
     let confirmPassword = document.getElementById('confirmpassword').value;
+    let date = document.getElementById('date').value;
+    let file = document.getElementById('file').value;
 
     if (firstname === '' || lastname === '' || email === '' || phone === '' || address1 === '' || address2 === '' || address3 === '' || address4 === '') {
         alert('Please fill in all fields');
@@ -39,6 +41,16 @@ function validateform(e) {
         isValid = false;
     }
 
+    if (date === '') {
+        alert('Date of birth is required');
+        isValid = false;
+    }
+
+    if (file === '') {
+        alert('Please upload a file');
+        isValid = false;
+    }
+
     return isValid;
 }
 
@@ -47,5 +59,27 @@ document.getElementById('form').addEventListener('submit', function(e) {
         e.preventDefault();  
     }
 });
+
+
+
+const player = {
+    user: 'herobaymax',
+    level: 50,
+    points: 12345
+}
+
+// const player = ['herobaymax', 50, 12345];
+
+for (const key in player) {
+    console.log(`${key}: ${player[key]}`);
+}
+
+for (i in player) {
+    console.log(i, "hehe");
+}
+
+for (i of Object.values(player)) {
+    console.log(i);
+}
 
 
