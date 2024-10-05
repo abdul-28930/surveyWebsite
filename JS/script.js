@@ -82,4 +82,38 @@ for (i of Object.values(player)) {
     console.log(i);
 }
 
+// let a = prompt("Enter the first side of the triangle");
+// let b = prompt("Enter the second side of the triangle");
+// let c = prompt("Enter the third side of the triangle");
 
+
+// if ( a + b > c || a + c > b || b + c > a) {
+//     console.log("Triangle is possible");
+// }
+    
+// else {
+//     console.log("Triangle is not possible");
+// }
+// console.log("heheheh");
+
+// if ((a == b && b != c) || (a == c && a != b) || (b == c && b != a)) {
+//     console.log("Triangle is isosceles");
+// } else if (a == b && b == c) {
+//     console.log("Triangle is equilateral");
+// }
+// else {
+//     console.log("Triangle is scalene");
+// }
+
+
+
+let a = 5;
+for (i=1; i<=a; i++) {
+    console.log("");
+    for (j=1; j<=i; j++) {
+        console.log("h");
+    }
+    for (k=1; k<=i; k++) {
+        console.log("*");
+    }
+}
