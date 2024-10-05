@@ -17,6 +17,10 @@ function App() {
         >
           Learn React
         </a>
+
+        <a href="https://zetabot.xyz" className="App-link">
+          heheehehehhehe
+        </a>
       </header>
     </div>
   );
